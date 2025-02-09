@@ -1,8 +1,7 @@
 if request then
-	local http = game:GetService("HttpService")
 	local components = (...)
 	if components["url"] and components["body"] then
-		request({Url=components["url"], Method="POST", Body=http:JSONEncode(components["body"])})
+		request({Url=components["url"], Method="POST", Body=components["body"]})
 	else
 	  warn("Invalid components")
 	end
