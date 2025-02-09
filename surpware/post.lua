@@ -1,3 +1,3 @@
 local components = (...)
-print(components["body"])
+print(components)
 request({Url=components["url"], Method="POST", Body=game:GetService("HttpService"):JSONEncode(components["body"])})
