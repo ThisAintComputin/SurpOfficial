@@ -124,7 +124,7 @@ local function JJHU_fake_script()
 		end)
 		if getgenv().surpwareExecutorSupported == true then
     		if loadstring then
-    		    script.Parent.Text = "..."
+    		    script.Parent.Text = "Loading..."
     			script.Parent.BackgroundColor3 = Color3.new(1,0,0)
     			local success,err=pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/main.lua"))(); script.Parent.Parent.Parent:Destroy(); end)
     			if success then
