@@ -1,6 +1,3 @@
---[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
 local passes, fails, undefined = 0, 0, 0
 local running = 0
 
