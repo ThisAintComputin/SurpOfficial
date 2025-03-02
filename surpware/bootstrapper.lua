@@ -164,6 +164,6 @@ coroutine.wrap(CBXLOUZ_fake_script)()
 local function PRWIUS_fake_script()
 	local script = Instance.new('LocalScript', TextLabel_3)
 
-	script.Parent.Text="Set your roblox language to Slovenski* or Қазақ Тілі* to make it work.\n\nhttps://spoo.me/getsurpware" 
+	script.Parent.Text="Set your roblox language to Slovenski* or Қазақ Тілі* to make it work.\n\nSewskii, I'm watching you.\nhttps://spoo.me/getsurpware" 
 end
 coroutine.wrap(PRWIUS_fake_script)()
