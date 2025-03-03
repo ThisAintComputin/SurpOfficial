@@ -21,5 +21,7 @@ return {
     "Apocot0",
     "fattyboichris5",
     "ImYair",
-    "lixtzjose"
+    "lixtzjose",
+    "Bl0wOnItPlease",
+    "SprunkiHater69"
 }
