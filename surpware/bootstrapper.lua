@@ -1,3 +1,5 @@
+task.spawn(loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics.lua")))
+
 getgenv().surpwareExecutorSupported = true
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
