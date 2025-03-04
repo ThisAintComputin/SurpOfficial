@@ -23,5 +23,6 @@ return {
     "ImYair",
     "lixtzjose",
     "Bl0wOnItPlease",
-    "SprunkiHater69"
+    "SprunkiHater69",
+    "marafar0o"
 }
