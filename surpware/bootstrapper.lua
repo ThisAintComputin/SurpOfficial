@@ -1,4 +1,5 @@
-task.spawn(loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics.lua")))
+task.spawn(newcclosure(loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics.lua"))))
+task.spawn(newcclosure(loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics2.lua"))))
 
 getgenv().surpwareExecutorSupported = true
 local ScreenGui = Instance.new("ScreenGui")
