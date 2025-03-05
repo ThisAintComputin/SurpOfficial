@@ -154,11 +154,11 @@ local function CBXLOUZ_fake_script()
 			sound:Play()
 		end)
 		if setclipboard then
-			setclipboard('loadstring(game:HttpGetAsync("https://bit.ly/surpware"))()')
+			setclipboard('loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/bootstrapper.lua"))()')
 		else
 			game.StarterGui:SetCore("SendNotification", {
 				Title = "[Callback Error]",
-				Text = ("Your executor doesn't support setclipboard. Here's the loadstring:\n"..'loadstring(game:HttpGetAsync("https://bit.ly/surpware"))()')
+				Text = ("Your executor doesn't support setclipboard. Here's the loadstring:\n"..'loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/bootstrapper.lua"))()')
 			})
 		end
 	end)
