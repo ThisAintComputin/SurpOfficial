@@ -4,6 +4,7 @@ if (...) then
 else
   local fake_executor_name = "Synapse X" end
   local fake_identity = 8
+end
 
 getgenv().identifyexecutor = function() return fake_executor_name end
 getgenv().syn = {request = (http_request or request)}
