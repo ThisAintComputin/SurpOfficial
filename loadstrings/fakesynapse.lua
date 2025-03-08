@@ -2,7 +2,7 @@ if (...) then
   local fake_executor_name = (...)[1]
   local fake_identity = (...)[2]
 else
-  local fake_executor_name = "Synapse X" end
+  local fake_executor_name = "Synapse X"
   local fake_identity = 8
 end
 
