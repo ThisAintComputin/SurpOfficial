@@ -1,9 +1,8 @@
+local fake_executor_name = "Synapse X"
+local fake_identity = 8
 if (...) then
-  local fake_executor_name = (...)[1]
-  local fake_identity = (...)[2]
-else
-  local fake_executor_name = "Synapse X"
-  local fake_identity = 8
+  fake_executor_name = (...)[1]
+  fake_identity = (...)[2]
 end
 
 -- Fake User Agent
