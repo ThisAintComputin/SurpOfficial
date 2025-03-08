@@ -134,7 +134,11 @@ local function JJHU_fake_script()
     			    script.Parent.Parent.Parent:Destroy()
     			else
     			    getgenv().surpwareExecutorSupported = false
-    			    script.Parent.Text = "There was an issue launching one or more components. "..tostring(err)
+    			    script.Parent.Text = "There was an issue launching one or more components."
+			    game.StarterGui:SetCore("SendNotification", {
+				Title = "[SurpWare]",
+				Text = err
+			    })
     			end
     		else
     			script.Parent.Text = "Unsupported Executor!"
