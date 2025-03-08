@@ -130,14 +130,12 @@ local function JJHU_fake_script()
     		    script.Parent.Text = "Loading..."
     			script.Parent.BackgroundColor3 = Color3.new(1,0,0)
     			local success,err=pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/main.lua"))({SurpwareVerification = true}); script.Parent.Parent.Parent:Destroy(); end)
-    			if success then
-    			    script.Parent.Parent.Parent:Destroy()
-    			else
+    			script.Parent.Parent.Parent:Destroy()
+			if not success then
     			    getgenv().surpwareExecutorSupported = false
-    			    script.Parent.Text = "There was an issue launching one or more components."
-			    game.StarterGui:SetCore("SendNotification", {
+    			    game.StarterGui:SetCore("SendNotification", {
 				Title = "[SurpWare]",
-				Text = err
+				Text = "Unable to load one or more components!\n"..tostring(err)
 			    })
     			end
     		else
