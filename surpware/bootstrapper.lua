@@ -1,4 +1,4 @@
-if not newcclosure or not (newcclosure(function() print(nil) end)==function() print(nil) end) then local newcclosure = function() return ... end end
+local onewcclosure = newcclosure or nil; local newcclosure = function() return onewcclosure(...) or ... end
 task.spawn(newcclosure(loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics.lua"))))
 task.spawn(newcclosure(loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics2.lua"))))
 
