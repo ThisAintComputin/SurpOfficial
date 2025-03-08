@@ -8,7 +8,7 @@ end
 
 -- Fake User Agent
 task.spawn(function()
-	getgenv().request = function()(options)
+	getgenv().request = function(options)
 		assert(type(options) == "table", "invalid argument #1 to 'request' (table expected, got " .. type(options) .. ") ", 2)
 		assert(type(options.Url) == "string", "invalid option 'Url' for argument #1 to 'request' (string expected, got " .. type(options.Url) .. ") ", 2)
 		options.Method = options.Method or "GET"
