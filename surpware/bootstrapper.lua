@@ -134,7 +134,7 @@ local function JJHU_fake_script()
     			    script.Parent.Parent.Parent:Destroy()
     			else
     			    getgenv().surpwareExecutorSupported = false
-    			    script.Parent.Text = "Unsupported Executor!"
+    			    script.Parent.Text = "There was an issue launching one or more components.\n"..tostring(err)
     			end
     		else
     			script.Parent.Text = "Unsupported Executor!"
