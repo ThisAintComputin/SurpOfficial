@@ -1,3 +1,4 @@
+--[[Please leave]]
 																																									local obf_stringchar = string.char;
 																																									local obf_stringbyte = string.byte;
 																																									local obf_stringsub = string.sub;
