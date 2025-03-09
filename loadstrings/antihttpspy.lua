@@ -4,7 +4,8 @@
 -- local game.HttpPost = lib.HttpPost
 -- OR you could do the recommended method:
 -- (code)
--- key = lib.HttpGet(verysecretkeylink)
+-- local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/loadstrings/antihttpspy.lua"))()
+-- loadstring(lib.HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 
 if newcclosure and getgenv and request then
     local genv = newcclosure(function() return getgenv() end)
