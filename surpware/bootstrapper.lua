@@ -304,7 +304,7 @@ local function WEXWB_fake_script()
 			sound:Play()
 		end)
 		if setclipboard then
-			setclipboard('loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/bootstrapper.lua"))()')
+			setclipboard('newcclosure(loadstring((request or http_request){Method="GET", Url="https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/bootstrapper.lua"}.Body))()')
 		else
 			game.StarterGui:SetCore("SendNotification", {
 				Title = "[Callback Error]",
