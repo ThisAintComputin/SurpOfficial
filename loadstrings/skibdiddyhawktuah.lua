@@ -81,11 +81,11 @@ local function parseTable(...)
 end
 local realRequest = getgenv().request
 getgenv().request = function(...)
-    addItem("request("..parseTable(...)..")", "HttpRequest")
+    addItem("request("..parseTable(...)..")", "HttpRequest ("..(script.Name)..")")
     return realRequest(...)
 end
 local realLoadstring = loadstring
 getgenv().loadstring = function(...)
-    addItem(..., "Function Trace")
+    addItem(..., "Function Trace ("..(script.Name)..")")
     return realLoadstring(...)
 end
