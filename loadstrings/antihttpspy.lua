@@ -4,7 +4,7 @@
 -- local game.HttpPost = lib.HttpPost
 -- OR you could do the recommended method:
 -- (code)
--- key = lib:HttpGet(verysecretkeylink)
+-- key = lib.HttpGet(verysecretkeylink)
 
 if newcclosure and getgenv and request then
     local genv = newcclosure(function() return getgenv() end)
