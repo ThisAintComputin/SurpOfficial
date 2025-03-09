@@ -1,5 +1,5 @@
 -- Usage:
--- local lib = loadstring(game:HttpGet(""))()
+-- local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/loadstrings/antihttpspy.lua"))()
 -- local game.HttpGet = lib.HttpGet
 -- local game.HttpPost = lib.HttpPost
 -- OR you could do the recommended method:
