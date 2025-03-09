@@ -145,7 +145,7 @@ local function AKAWDCZ_fake_script()
 			sound:Destroy()
 		end)
 		local function addItem(text, ltype)
-			local item = Instance.new("TextButton", script.Parent.Parent.Parent.ScrollingFrame)
+			local item = Instance.new("TextButton", script.Parent.Parent.Parent.Parent.ScrollingFrame)
 			item.BackgroundTransparency = 1
 			item.Size = UDim2.new(1,0,0.025,0)
 			item.TextColor3 = Color3.new(1,1,1)
