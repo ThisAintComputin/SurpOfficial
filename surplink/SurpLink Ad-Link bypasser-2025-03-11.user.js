@@ -2,7 +2,7 @@
 // @name         SurpLink Ad-Link bypasser
 // @namespace    http://tampermonkey.net/
 // @version      2025-03-11
-// @description  try to take over the world!
+// @description  killing ad-links since 2025
 // @author       Surplus Softworks
 // @match        *://*/*
 // @icon         https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/surplus_logo.png
@@ -12,7 +12,6 @@
 (function() {
     'use strict';
     const allowed_Domains = [
-        "https://linkunlocker.com",
         "https://linkvertise.com",
         "https://lootlinks.com",
         "https://mendationforc.info",
@@ -80,7 +79,7 @@
     blockui.innerHTML = '<p style="all: revert; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 200%; font-weight: bolder; text-align: center;">Bypassing ad-link... This could take 0-100 seconds<br /><a href="https://spoo.me/getsurpware" rel="noopener noreferrer" target="_blank" style="all: revert; font-size: 50%; text-decoration: none; border: none; outline: none; padding: 10px; background-color: #5865f2; color: white; border-radius: 5px;">Join Surplus Softworks Discord</a></p>';
     blockui.style = 'all: revert; position: fixed; top: 0%; left: 0%; width: 100%; height: 100%; z-index: 9999999999; background-color: black;';
     document.documentElement.appendChild(blockui);
-    if(allowed_Domains.includes(window.location.origin)){
+    if(allowed_Domains.includes(window.location.origin) && !(window.location.pathname==="/")){
         try{
             (async function(){let baconbypass=await (await fetch("https://api.solar-x.top/api/v3/bypass?url="+escape(window.location))).json(); if(baconbypass.status === "success"){window.location=baconbypass.result}else{blockui.remove();console.log("Ad-link bypass failed, probably unsupported website or not an ad-link.")}})();
         }catch{
@@ -88,6 +87,6 @@
         }
     }else{
         blockui.remove();
-        console.log("No ad-link detected. Carry on!");
+        console.log("No ad-link detected or path is blacklisted in ad-bypass. Carry on!");
     }
 })();
