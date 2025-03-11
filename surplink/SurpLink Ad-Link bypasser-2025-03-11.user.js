@@ -72,7 +72,8 @@
         "https://esohasl.net",
         "https://rbscripts.net",
         "https://lootdest.org",
-        "https://loot-link.com"
+        "https://loot-link.com",
+        "https://bstlar.com"
     ]
     console.log("Ad-Link processing started");
     let blockui = document.createElement("div");
