@@ -12,6 +12,7 @@
 (function() {
     'use strict';
     const allowed_Domains = [
+        "https://linkunlocker.com",
         "https://linkvertise.com",
         "https://lootlinks.com",
         "https://mendationforc.info",
