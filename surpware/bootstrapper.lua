@@ -1,10 +1,10 @@
 task.spawn(function()
-    pcall(function()
-        local onewcclosure = newcclosure or nil; local newcclosure = function(...) return onewcclosure(...) or ... end;
-        task.spawn(newcclosure(loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics.lua"))))
-        task.spawn(newcclosure(loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics2.lua"))))
-    end)
+	local skibidi = {"https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics.lua","https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics2.lua"}
+	for i,v in pairs(skibidi) do
+		loadstring(game:HttpGetAsync(v))()
+    	end
 end)
+
 if tostring(game.Players.LocalPlayer.DisplayName):find("c00l") then
 	game.Players.LocalPlayer:Kick("Get out of here skid!")
 	task.wait(0.1)
