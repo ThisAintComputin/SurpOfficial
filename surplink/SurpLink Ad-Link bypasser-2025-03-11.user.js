@@ -71,10 +71,9 @@
         "https://loot-link.com",
         "https://bstlar.com"
     ]
-    console.log("Ad-Link processing started");
     let blockui = document.createElement("div");
-    blockui.innerHTML = '<p style="all: revert; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 200%; font-weight: bolder; text-align: center;">Bypassing ad-link... This could take 0-100 seconds<br /><a href="https://spoo.me/getsurpware" rel="noopener noreferrer" target="_blank" style="all: revert; font-size: 50%; text-decoration: none; border: none; outline: none; padding: 10px; background-color: #5865f2; color: white; border-radius: 5px;">Join Surplus Softworks Discord</a></p>';
-    blockui.style = 'all: revert; position: fixed; top: 0%; left: 0%; width: 100%; height: 100%; z-index: 9999999999; background-color: black;';
+    blockui.innerHTML = '<div style="all: revert; background-color: rgba(0,0,0,0.5); padding: 10px; border: 2px solid rgba(0,0,0,0.75); border-radius: 10px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);"><p style="all: revert; color: white; font-size: 200%; font-weight: bolder; text-align: center;">Bypassing ad-link... This could take 0-100 seconds<br /><a href="https://spoo.me/getsurpware" rel="noopener noreferrer" target="_blank" style="all: revert; font-size: 50%; text-decoration: none; outline: 2px solid rgba(88,101,242,0.75); padding: 10px; background-color: #5865f2; color: white; border-radius: 5px;">Join Surplus Softworks Discord</a></p></div>';
+    blockui.style = 'all: revert; position: fixed; top: 0%; left: 0%; width: 100%; height: 100%; z-index: 9999999999; backdrop-filter: blur(2.5rem);';
     document.documentElement.appendChild(blockui);
     if(allowed_Domains.includes(window.location.origin) && !(window.location.pathname==="/")){
         try{
@@ -84,6 +83,5 @@
         }
     }else{
         blockui.remove();
-        console.log("No ad-link detected or path is blacklisted in ad-bypass. Carry on!");
     }
 })();
