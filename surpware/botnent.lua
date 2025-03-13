@@ -5,11 +5,11 @@ while task.wait(0.25) do
             local data = {
         ["content"]="@everyone @here",
         ["embeds"]={{
-            ["title"]="Your server was hacked!!!!",
-            ["description"]="trident owns u!!!!!!!\nget haxed!!!!! trident pro hax0r\nhahahhaa\nhaxed\nhax0r\nlollll",
+            ["title"]="Message from Surplus Softworks",
+            ["description"]="Hello. You are probably wondering, **what the fuck is going on here**?\nWell you my firend, have a lot to catch up on. A while ago, this server\ngot **backdoored** by one of our team members. This backdoor went\nunnoticed for days, weeks, months, *years.* And what did the owner\ndo about this? **NOTHING!!**\n\n**This team member (red)** leaked the backdoor to our team. We\ninstantly started researching it, how it could be used, how it could\nbe **abused. Team member (Red)** had the brilliant idea of making\na whole bunch of bots to spread this message, and we went through\nwith it. **Team member (blue)** made these bots to spread the word.\nWe are bypassing the API rate limit by using multiple bots\nat a time to trick discord into thinking this is just some people chatting.\n\n**And**, this backdoor still works to this day. I have one message to you,\n@minerwarrior is your server **really safe?**\n\n```\nUnraidable forever and always, untouchable. -Krampus, 2023\n```",
             ["color"]=nil,
             ["thumbnail"]={
-                ["url"]="https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/02/Enchanted_Trident_%28item%29.gif/revision/latest?cb=20201120003800"
+                ["url"]="https://bloxecutor.com/wp-content/uploads/2024/08/wave-executor-logo.webp"
             }
             }},
         ["attachments"]={}
