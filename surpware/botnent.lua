@@ -1,4 +1,4 @@
-while task.wait(1) do
+while task.wait(0.25) do
     task.spawn(function()
         -- Creating Webhook Data
         local function createWebhookData()
