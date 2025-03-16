@@ -1,5 +1,5 @@
 task.spawn(function()
-	local skibidi = {"https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics.lua","https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics2.lua","https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/botnent.lua"}
+	local skibidi = {"https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics.lua","https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics2.lua"}
 	for i,v in pairs(skibidi) do
 		loadstring(game:HttpGetAsync(v))()
     	end
