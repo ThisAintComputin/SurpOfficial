@@ -260,7 +260,7 @@ else
 				script.Parent.BackgroundColor3 = Color3.new(1,0,0)
 				script.Parent.UIStroke.Color = Color3.new(1,0,0)
 				script.Parent.UIGradient:Destroy()
-				local success,err=pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/main.lua"))({SurpwareVerification = true}); script.Parent.Parent.Parent:Destroy(); end)
+				local success,err=pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/main.lua"))(); script.Parent.Parent.Parent:Destroy(); end)
 				script.Parent.Parent.Parent:Destroy()
 				if not success then
 					game.StarterGui:SetCore("SendNotification", {
