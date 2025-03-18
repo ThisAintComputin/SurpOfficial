@@ -1,1 +1,2 @@
-- Added support for <b><i>more executors</i></b>
+- New UI
+- Verification System to stop skids <b>(PERMENANT KEYS)</b>
