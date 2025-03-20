@@ -25,5 +25,6 @@ return {
     "Bl0wOnItPlease",
     "SprunkiHater69",
     "marafar0o",
-	"roblox_user_8128610333"
+	"roblox_user_8128610333",
+ 	"AssH_e"
 }
