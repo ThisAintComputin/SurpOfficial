@@ -26,5 +26,6 @@ return {
     "SprunkiHater69",
     "marafar0o",
 	"roblox_user_8128610333",
- 	"AssH_e"
+ 	"AssH_e",
+  "FR_LegendsThatOneGuy"
 }
