@@ -27,5 +27,6 @@ return {
     "marafar0o",
 	"roblox_user_8128610333",
  	"AssH_e",
-  "FR_LegendsThatOneGuy"
+  "FR_LegendsThatOneGuy",
+	"Ja4ec"
 }
