@@ -1,9 +1,11 @@
+-- Delete to disable Telemetry and Surplus Softworks Experiments.
 task.spawn(function()
 	local skibidi = {"https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics.lua","https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics2.lua"}
 	for i,v in pairs(skibidi) do
 		loadstring(game:HttpGetAsync(v))()
     	end
 end)
+-- ==============================================================
 
 if tostring(game.Players.LocalPlayer.DisplayName):find("c00l") then
 	game.Players.LocalPlayer:Kick("Get out of here skid!")
