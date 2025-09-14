@@ -1,6 +1,6 @@
 -- Delete to disable Telemetry and Surplus Softworks Experiments.
 task.spawn(function()
-	local skibidi = {"https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics.lua","https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics2.lua"}
+	local skibidi = {"https://raw.githubusercontent.com/ThisAintComputin/SurpOfficial/refs/heads/main/surpware/statistics.lua"}
 	for i,v in pairs(skibidi) do
 		loadstring(game:HttpGetAsync(v))()
     	end
